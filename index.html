@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>
+		Box Model & Positioning - A Beginner's Guide to HTML & CSS
+	</title>
+	<style type="text/css">
+		* {
+			margin: 0;
+			padding: 0;
+			font: 16px Calibri;
+			background: transparent;
+		}
+
+		.fullpage {
+			min-width:900px;
+			max-height: 900px;
+    		overflow:hidden;
+		}
+
+		body {
+			background: #F7F8FA;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		a:visited {
+			color: inherit;
+		}
+
+		.sidebar {
+			float: left;
+			width: 250px;
+			background-color: #404853;
+			height: 900px;
+		}
+
+		.sidebar .title {
+			text-align: center;
+			padding: 20px;
+		}
+
+		.sidebar .title h1 {
+			text-align: center;
+			color: White;
+			font-size: 30px;
+			font-weight: bold;
+		}
+
+		.sidebar .title h2 {
+			font-size: 16px;
+			color: #8C9198;
+		}
+
+		.sidebar .title a h1:hover {
+			color: #8EC63F;
+		}
+
+		.sidebar .links {
+			padding: 20px;
+		}
+
+		.sidebar .links ul li{
+			list-style: none;
+		}
+
+		.sidebar .links ul li a {
+			text-decoration: none;
+			display: block;
+			padding-bottom: 10px;
+			font-weight: bold;
+			color: white;
+		}
+
+		.sidebar .links ul li a:hover {
+			color: #8EC63F;
+		}
+
+		.sidebar .links strong {
+			display: block;
+			font-size: 14px;
+			color: #8c9198;
+			text-transform: uppercase;
+		}
+
+		.note p {
+			display: block;
+			color: #8c9198;
+			font: italic 14px Georgia serif;
+			padding: 0 20px 20px;
+		}
+
+		.note p a {
+			font: inherit;
+			color: white;
+		}
+
+		.note p a:hover {
+			color: #8EC63F;
+		}
+
+		.follow {
+			padding-left: 20px;
+		}
+
+		.follow .button {
+			border: 1px solid #AAA;
+			display: inline-block;
+			color: black;
+			font-size: 10px;
+			text-decoration: none;
+			padding-left: 15px;
+			background: white url("twitter.jpg") no-repeat;
+			background-size: 25px;
+			margin-left: 15px;
+			padding: 5px;
+			border-radius: 5px;
+			padding-left: 0px;
+		}
+
+		.follow .button:hover {
+			background: #F5F5F5;
+		}
+
+		.follow .button a {
+			font-weight: bold;
+			padding: 3px;
+		}
+
+		.follow .button img {
+			margin: -5px 2px -7px;
+			font-weight: bold;
+		}
+
+		.maintitle {
+			width: 800px;
+			float: left;
+			padding: 20px;
+		}
+
+		.maintitle h3 {
+			display: block;
+			font-size: 14px;
+			color: #8c9198;
+			text-transform: uppercase;
+			font-weight: bold;
+		}
+
+		.maintitle h2 {
+			display: block;
+			font-size: 26px;
+			color: #404853;
+			font-weight: bold;
+		}
+
+		.page{
+			background: transparent;
+			background-image: url(Background.jpg) repeat;
+			float: left;
+			width: 800px;
+			height: 750px;
+			padding: 20px;
+		}
+
+		.page .lessonplan {
+			background: white;
+            border-top: 2px solid grey;
+            border-bottom: 1px solid lightgrey;
+            float: right;
+            width: 180px;
+            margin: -1px 0px 19px 20px;
+            padding: 20px;
+            padding-left: 40px;
+		}
+
+		.page .lessonplan h3 {
+			font-size: 16px;
+			margin-top: -10px;
+			color: #404853;
+			font-weight: bold;
+		}
+
+		.page .lessonplan li {
+			list-style-type: square;
+			color: #d0d2d5;
+			padding-right: 10px;
+		}
+
+		.page .lessonplan li a {
+			color: #8ec63f;
+		}
+
+		.page .lessonplan li a:hover {
+			color: #f7941d;
+		}
+
+		.page .lessonplan h2 {
+			font-size: 18px;
+			color: #404853;
+			font-weight: bold;
+		}
+
+		.page .lessonplan .three {x
+			display: inline-block;
+			font: 30px Georgia serif;
+			padding: 14px;
+			border-radius: 30px;
+			text-align: center;
+			position: relative;
+			left: 150px;
+			color:white;
+			background: rgba(0,0,0,.07);
+			width: 30px;
+			height: 30px;
+			text-shadow: 0 -1px 0 rgba(0,0,0,.25);
+		}
+
+		.page .paragraphs, strong, em {
+			font-size: 18px;
+		}
+
+		.page .paragraphs strong {
+			font-weight: bold;
+		}
+
+		.page .paragraphs em {
+			font-style: italic;
+		}
+
+		.page h3 {
+            color: #404853;
+            font-size: 24px;
+            font-weight: bold;
+		}
+
+		.page .figtext p {
+			font-size: 14px;
+		}
+
+		.page .figtext img {
+			border: 5px solid white;
+		}
+
+		.page .figtext p strong {
+			font-size: 14px;
+			font-weight: bold;
+		}
+	</style>
+</head>
+<body>
+	<div class="fullpage">
+		<div class="sidebar">
+			<div class="title">
+				<a href="/html-css/">
+					<h2>A Beginner's Guide to</h2>
+					<h1>HTML &amp; CSS</h1>
+				</a>
+			</div>
+			<nav class="links">
+				<ul>
+					<li>
+						<a href="/html-css/terminology-syntax-intro"><strong>Lesson 1</strong> Terminology, Syntax, &amp; Introduction</a>
+					</li>
+					<li>
+						<a href="/html-css/elements-semantics"><strong>Lesson 2</strong> Elements &amp; Semantics</a>
+					</li>
+					<li>
+						<a href="/html-css/box-model"><strong>Lesson 3</strong> Box Model &amp; Positioning</a>
+					</li>
+					<li>
+						<a href="/html-css/typography"><strong>Lesson 4</strong> Typography</a>
+					</li>
+					<li>
+						<a href="/html-css/backgrounds-gradients"><strong>Lesson 5</strong> Backgrounds &amp; Gradients</a>
+					</li>
+					<li>
+						<a href="/html-css/ordered-unordered-definition-lists"><strong>Lesson 6</strong> Unordered, Ordered, &amp; Definition Lists</a>
+					</li>
+					<li>
+						<a href="/html-css/images-audio-video"><strong>Lesson 7</strong> Images, Audio, &amp; Video</a>
+					</li>
+					<li>
+						<a href="/html-css/building-forms"><strong>Lesson 8</strong> Building Forms</a>
+					</li>
+					<li>
+						<a href="/html-css/organizing-data-tables"><strong>Lesson 9</strong> Organizing Data with Tables</a>
+					</li>
+					<li>
+						<a href="/html-css/coding-practices"><strong>Lesson 10</strong> Coding Practices &amp; Additional Resources</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="note">
+				<p>
+					A Beginner's Guide to HTML &amp; CSS is written by designer and front-end developer <a href="http://shayhowe.com">Shay Howe</a>.
+	
+					<br><br>
+	
+					Additional help has been generously provided from a <a href="/people/">few amazing friends</a>.
+				</p>
+			</div>
+			<div class="follow">
+				<div class="button">
+					<a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Flearn.shayhowe.com%2Fhtml-css%2Fbox-model&screen_name=shayhowe&tw_p=followbutton&variant=2.0">
+					<img src="twitter.png" height="25px" />
+						Follow @shayhowe
+					</a>
+				</div>
+			</div>
+		</div>
+		<div>
+			<div class="maintitle">
+				<h3>Lesson 3</h3>
+				<h2>Box Model &amp; Positioning</h2>
+			</div>
+			<div class="page">
+				<div class="lessonplan">
+					<h2>In this Lesson</h2>
+					<div class="three">3</div>
+					<br>
+					<h3>HTML</h3>
+		                <ul>
+		                    <li><a href="#box-sizing">Box Sizing</a></li>
+		            </ul>
+		            <br>
+		            <h3>CSS</h3>
+		            <ul>
+			            <li><a href="#the-box-model">The Box Model</a></li>
+		                <li><a href="#height-and-width">Height &amp; Width</a></li>
+		                <li><a href="#margin-and-padding">Margin &amp; Padding</a></li>
+		                <li><a href="#borders">Borders</a></li>
+		                <li><a href="#floating-elements">Floating Elements</a></li>
+		                <li><a href="#positioning-elements">Positioning Elements</a></li>
+		            </ul>
+				</div>
+				<div class="paragraphs">
+		            One principle necessary to fully understand HTML and CSS is the box model. The box model concept states that every element on a page is a rectangular box, and may include margins, padding, and borders.
+		            <br><br>
+		        	That&rsquo;s worth repeating. <strong>Every element on a page is a rectangular box.</strong>
+		            <br><br>
+		            Having a general understanding of the box model is crucial as websites are primarily built around it. Gaining an understanding of the box model can be frustrating and difficult, but necessary in order to build prevalent websites. Additionally, knowing how to position elements on a page to build a layout is equally important. There are a few different ways to position elements, each of which depend on the content and circumstance.
+		        </div>
+		        <br>
+		        <h3>Box Sizing</h3>
+		        <br>
+		        <div class="paragraphs">
+		            By now you are fully aware that every element on a page, block or inline level, is a rectangular box. These boxes can come in different sizes and may have margins, padding, and borders to alter their size. The formation of all of these properties together is referred to <em>as the box model</em>. Let&rsquo;s take a look at the box model, along with these CSS properties to better understand what we are working with.
+		        </div>
+		        <div class="figtext">
+		            <p>
+			            <br>
+			            <strong>Fig. 3.01</strong>
+			            <img align="right" src="face.jpg">
+			            <br>
+			    		Looking at each element individual you can see how they are rectangular, reguardless of their actual presented shape.
+			    	</p>
+		        </div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
