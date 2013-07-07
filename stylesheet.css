@@ -166,6 +166,6 @@ footer {
 	background-color: rgba(0, 0, 0, .5);
 	position: fixed;
 	right: -4px;
-	top: -4px;
+	top: 25%;
 	border-radius: 4px;
 }
