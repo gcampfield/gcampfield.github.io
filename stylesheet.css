@@ -50,6 +50,11 @@ nav li {
 	margin: 10px;
 }
 
+blockquote {
+	padding: 20px;
+	font-size: 20px;
+}
+
 .right {
 	text-align: right;
 }
@@ -105,9 +110,28 @@ nav li {
 	line-height: 100px;
 }
 
-.fact h2 {
+.fact h3 {
 	display: block;
 	font-size: 12px;
 	text-transform: uppercase;
 	margin-top: 10px;
+}
+
+.quote {
+	text-align: center;
+	width: 75%;
+	margin: 20px 12.5%;
+	background-color: orange;
+}
+
+.quote h3 {
+	font-weight: bold;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.quote h4 {
+	font-weight: normal;
+	font-size: 12px;
+	text-transform: uppercase;
 }
