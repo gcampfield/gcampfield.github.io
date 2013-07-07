@@ -14,11 +14,16 @@
 		background-color: red;
 	}
 
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
 	nav {
 		width: 75%;
 		display: inline-block;
 		background: lightgrey;
-		margin: 20px 12.5% 50px;
+		margin: 20px 12.5%;
 	}
 
 	nav ul {
@@ -48,9 +53,30 @@
 		border: none;
 	}
 
-	a {
-		color: inherit;
-		text-decoration: none;
+	hr {
+		text-align: center;
+		display: block;
+		background-color: white;
+		height: 1px;
+		margin: 5px auto 0px;
+		width: 200px;
+		border-style: none;
+	}
+
+	.array {
+		width: 75%;
+		background-color: lightgreen;
+		margin: 20px 12.5%;
+		text-align: center;
+	}
+
+	.array-pictures {
+		height: 200px;
+		min-width: 46.5%;
+		max-width: 97%;
+		background-color: pink;
+		margin: 1.5%;
+		display: inline-block;
 	}
 </style>
 </head>
@@ -64,6 +90,7 @@
 			<li class="right"><a href="">Contact</a></li>
 		</ul>
 	</nav>
+	<hr class="breakline">
 	<section class="array">
 		<div class="array-pictures array-one"></div>
 		<div class="array-pictures array-two"></div>
