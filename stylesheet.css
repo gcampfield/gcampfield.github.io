@@ -14,6 +14,10 @@ a {
 	cursor: pointer;
 }
 
+h1 {
+	font-size: 64px;
+}
+
 h2 {
 	text-transform: uppercase;
 	text-align: center;
@@ -94,20 +98,22 @@ blockquote {
 .fact {
 	display: inline-block;
 	margin: 10px;
-	width: 120px;
+	width: 140px;
 	height: 175px;
 	background-color: green;
 }
 
-.fact p {
+.circletext {
 	padding: 10px;
 	width: 98px;
 	height: 98px;
 	background-color: blue;
 	border-radius: 60px;
 	border: 1px solid yellow;
-	vertical-align: baseline;
 	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
 }
 
 .fact h3 {
@@ -134,4 +140,32 @@ blockquote {
 	font-weight: normal;
 	font-size: 12px;
 	text-transform: uppercase;
+}
+
+footer {
+	width: 75%;
+	margin: 20px 12.5%;
+	border-bottom: 1px solid white;
+	text-align: center;
+	background-color: purple;
+}
+
+.footerbox {
+	width: 200px;
+	height: 300px;
+	margin: 2%;
+	display: inline-block;
+	background-color: cyan;
+}
+
+.topbutton {
+	width: 50px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	background-color: rgba(0, 0, 0, .5);
+	position: fixed;
+	right: -4px;
+	top: -4px;
+	border-radius: 4px;
 }
