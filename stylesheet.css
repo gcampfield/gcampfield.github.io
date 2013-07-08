@@ -97,7 +97,6 @@ blockquote {
 	width: 75%;
 	max-width: 825px;
 	margin: 20px auto;
-	background-color: salmon;
 	text-align: center;
 }
 
@@ -106,20 +105,19 @@ blockquote {
 	margin: 10px;
 	width: 140px;
 	height: 175px;
-	background-color: green;
 }
 
 .circletext {
 	padding: 10px;
 	width: 98px;
 	height: 98px;
-	background-color: blue;
 	border-radius: 60px;
-	border: 1px solid yellow;
+	border: 1px solid #0068bf;
 	line-height: 100px;
 	text-align: center;
 	font-size: 30px;
 	margin: 0 auto;
+	color: #F24545;
 }
 
 .fact h3 {
@@ -180,4 +178,5 @@ footer {
 	right: -4px;
 	top: 25%;
 	border-radius: 4px;
+	color: #F5F5F5;
 }
