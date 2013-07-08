@@ -7,6 +7,8 @@
 body {
 	background-color: #F5F5F5;
 	margin: 20px;
+	font-family: sans-serif;
+	color: #6A6A65;
 }
 
 a {
@@ -17,6 +19,7 @@ a {
 
 h1 {
 	font-size: 64px;
+	margin: 40px;
 }
 
 h2 {
@@ -44,7 +47,6 @@ nav {
 
 nav li {
 	display: inline-block;
-	color: #6A6A65;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #6A6A65;
 	list-style: none;
@@ -79,7 +81,6 @@ blockquote {
 .array {
 	width: 75%;
 	max-width: 825px;
-	background-color: lightgreen;
 	margin: 20px auto;
 	text-align: center;
 }
