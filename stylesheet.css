@@ -35,9 +35,10 @@ hr {
 
 nav {
 	width: 75%;
+	max-width: 825px;
 	display: inline-block;
 	background: lightgrey;
-	margin: 20px 12.5%;
+	margin: 20px auto;
 }
 
 nav ul {
@@ -74,15 +75,15 @@ blockquote {
 
 .array {
 	width: 75%;
+	max-width: 825px;
 	background-color: lightgreen;
-	margin: 20px 12.5%;
+	margin: 20px auto;
 	text-align: center;
 }
 
 .array-pictures {
 	height: 200px;
 	min-width: 46.5%;
-	max-width: 97%;
 	background-color: pink;
 	margin: 1.5%;
 	display: inline-block;
@@ -90,7 +91,8 @@ blockquote {
 
 .facts {
 	width: 75%;
-	margin: 20px 12.5%;
+	max-width: 825px;
+	margin: 20px auto;
 	background-color: salmon;
 	text-align: center;
 }
@@ -126,7 +128,8 @@ blockquote {
 .quote {
 	text-align: center;
 	width: 75%;
-	margin: 20px 12.5%;
+	max-width: 825px;
+	margin: 20px auto;
 	background-color: orange;
 }
 
@@ -144,7 +147,8 @@ blockquote {
 
 footer {
 	width: 75%;
-	margin: 20px 12.5%;
+	max-width: 825px;
+	margin: 20px auto;
 	border-bottom: 1px solid white;
 	text-align: center;
 	background-color: purple;
