@@ -13,12 +13,6 @@ body {
 	text-transform: uppercase;
 }
 
-h1 {
-	font-size: 64px;
-	margin: 40px;
-	text-transform: none;
-}
-
 h2 {
 	text-align: center;
 }
@@ -91,6 +85,12 @@ nav li {
 }
 
 /* ARRAY SECTION */
+
+h1 {
+	font-size: 64px;
+	margin: 40px;
+	text-transform: none;
+}
 
 .array {
 	width: 75%;
