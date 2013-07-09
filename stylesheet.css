@@ -103,6 +103,7 @@ blockquote {
 }
 
 .fact {
+	vertical-align: top;
 	display: inline-block;
 	margin: 10px;
 	width: 140px;
