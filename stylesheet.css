@@ -4,7 +4,6 @@
 	margin: 0;
 	padding: 0;
 	background-color: transparent;
-	font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -12,6 +11,7 @@ body {
 	margin: 20px;
 	color: #6A6A65;
 	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
 	text-transform: uppercase;
 }
 
@@ -170,14 +170,38 @@ footer {
 }
 
 .footerbox {
-	width: 200px;
+	width: 225px;
 	height: 300px;
-	margin: 2%;
+	margin: 10px;
 	display: inline-block;
+	vertical-align: top;
+}
+
+.footerbox h2 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.footerbox img {
+	background-color: #00A8FF;
 }
 
 .footerbox h3 {
 	padding: 20px;
+}
+
+.footerbox p {
+	font-size: 10px;
+}
+
+.footerbox strong {
+	font-weight: bold;
+}
+
+.footerbox a {
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #F24545;
 }
 
 /* BUTTON TO TOP */
