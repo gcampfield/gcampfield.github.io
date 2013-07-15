@@ -183,6 +183,11 @@ footer {
 	vertical-align: top;
 }
 
+.footerbox h2 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
 .footerbox img {
 	background-color: #00A8FF;
 }
