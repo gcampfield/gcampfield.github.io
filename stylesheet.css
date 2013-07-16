@@ -1,11 +1,29 @@
+/* GENERAL */
+
 * {
 	margin: 0;
 	padding: 0;
-	background-color: transparent;
 }
 
 body {
-	background-color: grey;
+	background-color: #F5F5F5;
+	color: #6A6A65;
+	letter-spacing: 2px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+}
+
+h2 {
+	text-align: center;
+}
+
+hr {
+	display: block;
+	background-color: #AAA;
+	height: 1px;
+	margin: 50px auto;
+	width: 200px;
+	border-style: none;
 }
 
 a {
@@ -14,49 +32,36 @@ a {
 	cursor: pointer;
 }
 
-h1 {
-	font-size: 64px;
+.circletext {
+	padding: 10px;
+	width: 98px;
+	height: 98px;
+	border-radius: 60px;
+	border: 1px solid #0068bf;
+	line-height: 100px;
+	text-align: center;
+	font-size: 30px;
+	margin: 0 auto;
+	color: #F24545;
 }
 
-h2 {
-	text-transform: uppercase;
-	text-align: center;
-}
-
-hr {
-	text-align: center;
-	display: block;
-	background-color: white;
-	height: 1px;
-	margin: 5px auto 0px;
-	width: 200px;
-	border-style: none;
-}
+/* NAV BAR */
 
 nav {
-	width: 75%;
-	display: inline-block;
-	background: lightgrey;
-	margin: 20px 12.5%;
-}
-
-nav ul {
 	text-align: center;
+	width: 75%;
+	max-width: 825px;
+	display: block;
+	margin: 20px auto;
 }
 
 nav li {
 	display: inline-block;
 	padding-bottom: 5px;
-	border-bottom: 1px solid black;
-	background-color: lightblue;
+	border-bottom: 1px solid #6A6A65;
 	list-style: none;
 	width: 120px;
 	margin: 10px;
-}
-
-blockquote {
-	padding: 20px;
-	font-size: 20px;
 }
 
 .right {
@@ -70,102 +75,152 @@ blockquote {
 .logo {
 	text-align: center;
 	border: none;
+	height: 150px;
+}
+
+.logo img {
+	text-align: center;
+	height: 100px;
+}
+
+/* ARRAY SECTION */
+
+h1 {
+	font-size: 64px;
+	margin: 40px;
+	text-transform: none;
 }
 
 .array {
 	width: 75%;
-	background-color: lightgreen;
-	margin: 20px 12.5%;
+	max-width: 825px;
+	margin: 20px auto;
 	text-align: center;
 }
 
-.array-pictures {
+.arraypics {
 	height: 200px;
-	min-width: 46.5%;
-	max-width: 97%;
-	background-color: pink;
+	width: 46.5%;
+	background-color: #FBFBFB;
 	margin: 1.5%;
 	display: inline-block;
+	vertical-align: top;
+	box-shadow: 1px 1px 2px #E0E0E0;
+	overflow: hidden;
 }
+
+.array img {
+	height: 180px;
+	display: block;
+	margin: 10px auto;
+}
+
+/* FACTS SECTION */
 
 .facts {
 	width: 75%;
-	margin: 20px 12.5%;
-	background-color: salmon;
+	max-width: 825px;
+	margin: 20px auto;
 	text-align: center;
 }
 
 .fact {
+	vertical-align: top;
 	display: inline-block;
 	margin: 10px;
 	width: 140px;
 	height: 175px;
-	background-color: green;
-}
-
-.circletext {
-	padding: 10px;
-	width: 98px;
-	height: 98px;
-	background-color: blue;
-	border-radius: 60px;
-	border: 1px solid yellow;
-	line-height: 100px;
-	text-align: center;
-	font-size: 30px;
-	margin: 0 auto;
 }
 
 .fact h3 {
-	display: block;
+	display: inline-block;
 	font-size: 12px;
-	text-transform: uppercase;
 	margin-top: 10px;
 }
+
+/* QUOTE SECTION */
 
 .quote {
 	text-align: center;
 	width: 75%;
-	margin: 20px 12.5%;
-	background-color: orange;
+	max-width: 825px;
+	margin: 20px auto;
+}
+
+.quote blockquote {
+	padding: 20px;
+	font-size: 20px;
 }
 
 .quote h3 {
 	font-weight: bold;
 	font-size: 14px;
-	text-transform: uppercase;
 }
 
 .quote h4 {
 	font-weight: normal;
 	font-size: 12px;
-	text-transform: uppercase;
+	font-style: italic;
+	text-transform: none;
 }
+
+/* FOOTER */
 
 footer {
 	width: 75%;
-	margin: 20px 12.5%;
-	border-bottom: 1px solid white;
+	max-width: 825px;
+	margin: 20px auto;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #AAA;
 	text-align: center;
-	background-color: purple;
 }
 
 .footerbox {
-	width: 200px;
+	width: 225px;
 	height: 300px;
-	margin: 2%;
+	margin: 10px;
 	display: inline-block;
-	background-color: cyan;
+	vertical-align: top;
 }
+
+.footerbox h2 {
+	font-size: 25px;
+	font-weight: normal;
+}
+
+.footerbox img {
+	background-color: #00A8FF;
+}
+
+.footerbox h3 {
+	padding: 20px;
+}
+
+.footerbox p {
+	font-size: 10px;
+}
+
+.footerbox strong {
+	font-weight: bold;
+}
+
+.footerbox a {
+	display: inline-block;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #F24545;
+}
+
+/* BUTTON TO TOP */
 
 .topbutton {
 	width: 50px;
 	height: 50px;
 	text-align: center;
 	line-height: 50px;
-	background-color: rgba(0, 0, 0, .5);
+	background-color: rgba(0, 0, 0, .25);
 	position: fixed;
 	right: -4px;
-	top: -4px;
+	top: 25%;
 	border-radius: 4px;
+	color: #F5F5F5;
 }
