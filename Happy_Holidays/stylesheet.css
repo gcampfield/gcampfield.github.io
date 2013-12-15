@@ -4,9 +4,9 @@ body {
 }
 
 section.main {
-	display: inline-block;
 	max-width: 720px;
-	margin: 10px 0px 0px;
+	margin: 10px auto 0px;
+	text-align: right;
 }
 
 h1 {
@@ -18,16 +18,15 @@ h1 {
 }
 
 img {
-	width: 100%;
+	width: 98%;
+	margin: 0px 2;
 	border: 5px solid white;
 	border-radius: 2px;
 }
 
 audio {
-	display: block;
-	margin-left: 682px;
+	display: inline-block;
 	margin-top: 20px;
-	margin-bottom: 0px;
 	width: 48px;
 	height: 20px;
 }
