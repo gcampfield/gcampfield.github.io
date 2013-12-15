@@ -1,0 +1,33 @@
+body {
+	text-align: center;
+	background: #A32C28;
+}
+
+section.main {
+	display: inline-block;
+	max-width: 720px;
+	margin: 10px 0px 0px;
+}
+
+h1 {
+	color: white;
+	font-family: Great Vibes;
+	font-size: 50px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+img {
+	width: 100%;
+	border: 5px solid white;
+	border-radius: 2px;
+}
+
+audio {
+	display: block;
+	margin-left: 682px;
+	margin-top: 20px;
+	margin-bottom: 0px;
+	width: 48px;
+	height: 20px;
+}
