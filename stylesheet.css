@@ -45,6 +45,36 @@ a {
 	color: #F24545;
 }
 
+/* NOTICE */
+
+.notice {
+	background: #F24545;
+	width: 100%;
+	margin: 0 auto;
+	padding: 40px 0 80px; 
+	text-align: center;
+	color: #F5F5F5;
+}
+
+.notice h2 {
+	font-size: 50px;
+}
+
+.notice h3 {
+	margin-top: 40px;
+}
+
+.notice a {
+	display: inline-block;
+	border-bottom: 2px solid #00A8FF;
+}
+
+.notice b {
+	position: relative;
+	font-size: 36px;
+	top: 13px;
+}
+
 /* NAV BAR */
 
 nav {
@@ -84,6 +114,10 @@ nav li {
 }
 
 /* ARRAY SECTION */
+
+.array {
+	display: none;
+}
 
 h1 {
 	font-size: 64px;

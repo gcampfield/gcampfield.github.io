@@ -30,3 +30,9 @@ audio {
 	width: 48px;
 	height: 20px;
 }
+
+@media handheld {
+	audio {
+		display: none;
+	}
+}
